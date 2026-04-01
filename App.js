@@ -1,9 +1,11 @@
 import React from 'react';
+import { ActivityIndicator, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
+import { useFonts, PinyonScript_400Regular } from '@expo-google-fonts/pinyon-script';
 
 import HomeScreen from './src/screens/HomeScreen';
 import PrayScreen from './src/screens/PrayScreen';
@@ -56,6 +58,18 @@ function HomeTabs() {
 }
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    PinyonScript_400Regular,
+  });
+
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, backgroundColor: COLORS.background, alignItems: 'center', justifyContent: 'center' }}>
+        <ActivityIndicator size="large" color={COLORS.accent} />
+      </View>
+    );
+  }
+
   return (
     <NavigationContainer
       theme={{

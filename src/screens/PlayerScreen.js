@@ -87,6 +87,7 @@ export default function PlayerScreen({ route, navigation }) {
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.closeButton}>
           <Ionicons name="chevron-down" size={24} color={COLORS.textPrimary} />
         </TouchableOpacity>
+        <Text style={styles.topBarLogo}>Ora</Text>
         <TouchableOpacity style={styles.optionButton}>
           <Ionicons name="ellipsis-horizontal" size={20} color={COLORS.textSecondary} />
         </TouchableOpacity>
@@ -203,6 +204,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 56,
     paddingHorizontal: SPACING.lg,
+  },
+  topBarLogo: {
+    fontFamily: 'PinyonScript_400Regular',
+    fontSize: 26,
+    color: COLORS.textMuted,
   },
   closeButton: {
     width: 40,

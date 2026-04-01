@@ -41,6 +41,11 @@ export default function HomeScreen({ navigation }) {
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
+        {/* Brand Logo */}
+        <View style={styles.logoArea}>
+          <Text style={styles.logoText}>Ora</Text>
+        </View>
+
         {/* Header */}
         <View style={styles.header}>
           <View>
@@ -165,7 +170,17 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.background,
   },
   scrollContent: {
-    paddingTop: 60,
+    paddingTop: 56,
+  },
+  logoArea: {
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  logoText: {
+    fontFamily: 'PinyonScript_400Regular',
+    fontSize: 44,
+    color: COLORS.accent,
+    letterSpacing: 1,
   },
   header: {
     flexDirection: 'row',
