@@ -1,6 +1,6 @@
 export const CATEGORIES = [
   { id: 'rosary', title: 'Rosary', icon: 'flower-outline', color: '#7B68AE', description: 'Pray the Holy Rosary' },
-  { id: 'mass', title: 'Daily Mass', icon: 'book-open-outline', color: '#C4785C', description: 'Readings & reflections' },
+  { id: 'mass', title: 'Daily Mass', icon: 'reader-outline', color: '#C4785C', description: 'Readings & reflections' },
   { id: 'lectio', title: 'Lectio Divina', icon: 'book-outline', color: '#5B8A72', description: 'Sacred reading' },
   { id: 'examen', title: 'Examen', icon: 'eye-outline', color: '#4A7FB5', description: 'Daily reflection' },
   { id: 'novena', title: 'Novenas', icon: 'calendar-outline', color: '#A85C7B', description: 'Nine-day devotions' },

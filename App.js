@@ -1,7 +1,7 @@
 import React from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DarkTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
@@ -73,20 +73,15 @@ export default function App() {
   return (
     <NavigationContainer
       theme={{
-        dark: true,
+        ...DarkTheme,
         colors: {
+          ...DarkTheme.colors,
           primary: COLORS.accent,
           background: COLORS.background,
           card: COLORS.surface,
           text: COLORS.textPrimary,
           border: COLORS.cardBorder,
           notification: COLORS.accent,
-        },
-        fonts: {
-          regular: { fontFamily: 'System', fontWeight: '400' },
-          medium: { fontFamily: 'System', fontWeight: '500' },
-          bold: { fontFamily: 'System', fontWeight: '700' },
-          heavy: { fontFamily: 'System', fontWeight: '800' },
         },
       }}
     >
