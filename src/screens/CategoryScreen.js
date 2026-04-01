@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontWeight: '700',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     letterSpacing: -0.5,
     textAlign: 'center',
@@ -138,11 +138,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   sessionsList: {
-    gap: 12,
   },
   sessionCard: {
     borderRadius: 16,
     overflow: 'hidden',
+    marginBottom: 12,
   },
   sessionGradient: {
     flexDirection: 'row',
@@ -168,14 +168,14 @@ const styles = StyleSheet.create({
   },
   sessionNumberText: {
     fontSize: 14,
-    fontWeight: '700',
+    fontWeight: 'bold',
   },
   sessionInfo: {
     flex: 1,
   },
   sessionTitle: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     marginBottom: 3,
   },
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
   sessionDuration: {
     fontSize: 12,
     color: COLORS.textMuted,
-    fontWeight: '500',
+    fontWeight: 'normal',
   },
   playBtn: {
     width: 44,

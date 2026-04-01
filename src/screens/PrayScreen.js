@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 32,
-    fontWeight: '700',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     paddingHorizontal: SPACING.lg,
     letterSpacing: -0.5,
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 18,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
   },
   horizontalScroll: {
@@ -145,13 +145,13 @@ const styles = StyleSheet.create({
   },
   miniTitle: {
     fontSize: 14,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     lineHeight: 19,
   },
   miniDuration: {
     fontSize: 12,
     color: COLORS.textMuted,
-    fontWeight: '500',
+    fontWeight: 'normal',
   },
 });

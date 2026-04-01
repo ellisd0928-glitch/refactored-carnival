@@ -254,7 +254,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    fontWeight: '700',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     textAlign: 'center',
     letterSpacing: -0.3,
@@ -292,13 +292,12 @@ const styles = StyleSheet.create({
   timeText: {
     fontSize: 12,
     color: COLORS.textMuted,
-    fontWeight: '500',
+    fontWeight: 'normal',
   },
   controls: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 32,
     marginBottom: SPACING.xl,
   },
   secondaryControl: {
@@ -306,6 +305,7 @@ const styles = StyleSheet.create({
     height: 48,
     alignItems: 'center',
     justifyContent: 'center',
+    marginHorizontal: 16,
   },
   playPauseButton: {
     width: 72,
@@ -313,6 +313,7 @@ const styles = StyleSheet.create({
     borderRadius: 36,
     alignItems: 'center',
     justifyContent: 'center',
+    marginHorizontal: 16,
   },
   bottomActions: {
     flexDirection: 'row',
@@ -320,11 +321,11 @@ const styles = StyleSheet.create({
   },
   actionButton: {
     alignItems: 'center',
-    gap: 4,
   },
   actionLabel: {
     fontSize: 11,
     color: COLORS.textMuted,
-    fontWeight: '500',
+    fontWeight: 'normal',
+    marginTop: 4,
   },
 });

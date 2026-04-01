@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 32,
-    fontWeight: '700',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     letterSpacing: -0.5,
     marginBottom: SPACING.lg,
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
   },
   profileName: {
     fontSize: 17,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
   },
   profileSub: {
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
   },
   streakTitle: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
   },
   streakSub: {
@@ -184,12 +184,12 @@ const styles = StyleSheet.create({
   menuLeft: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 14,
   },
   menuLabel: {
     fontSize: 16,
     color: COLORS.textPrimary,
-    fontWeight: '500',
+    fontWeight: 'normal',
+    marginLeft: 14,
   },
   quoteCard: {
     backgroundColor: COLORS.card,
@@ -210,6 +210,6 @@ const styles = StyleSheet.create({
     color: COLORS.textMuted,
     textAlign: 'center',
     marginTop: 10,
-    fontWeight: '500',
+    fontWeight: 'normal',
   },
 });

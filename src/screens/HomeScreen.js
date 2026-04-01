@@ -191,7 +191,7 @@ const styles = StyleSheet.create({
   },
   greeting: {
     fontSize: 28,
-    fontWeight: '700',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     letterSpacing: -0.5,
   },
@@ -207,13 +207,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     paddingHorizontal: SPACING.md,
-    gap: 10,
     marginBottom: SPACING.lg,
   },
   categoryCard: {
     width: (width - SPACING.md * 2 - 20) / 3,
     borderRadius: 16,
     overflow: 'hidden',
+    margin: 5,
   },
   categoryGradient: {
     paddingVertical: 18,
@@ -232,7 +232,7 @@ const styles = StyleSheet.create({
   },
   categoryTitle: {
     fontSize: 12,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     textAlign: 'center',
   },
@@ -261,12 +261,12 @@ const styles = StyleSheet.create({
   mysteryLabel: {
     fontSize: 12,
     color: COLORS.textSecondary,
-    fontWeight: '500',
+    fontWeight: 'normal',
   },
   mysteryTitle: {
     fontSize: 16,
     color: COLORS.textPrimary,
-    fontWeight: '600',
+    fontWeight: 'bold',
     marginTop: 2,
   },
   sectionHeader: {
@@ -275,7 +275,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 20,
-    fontWeight: '700',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     letterSpacing: -0.3,
   },
@@ -302,13 +302,13 @@ const styles = StyleSheet.create({
   featuredDuration: {
     fontSize: 12,
     color: COLORS.textMuted,
-    fontWeight: '500',
+    fontWeight: 'normal',
     alignSelf: 'flex-end',
   },
   featuredBottom: {},
   featuredTitle: {
     fontSize: 20,
-    fontWeight: '700',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
     marginBottom: 4,
   },
@@ -330,7 +330,7 @@ const styles = StyleSheet.create({
   },
   prayerTitle: {
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: 'bold',
     color: COLORS.textPrimary,
   },
   prayerMeta: {
